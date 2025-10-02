@@ -103,10 +103,11 @@ const Login = () => {
             required
           ></textarea>
         )}
+     
         <button
           type="submit"
           className="py-2 bg-gradient-to-b from-purple-400
-                to-violet-600 text-white rounded-md cursor-pointer hover:from-violet-400 hover:to-violet-600 hover:text-gray-200"
+                to-violet-600 text-white rounded-md cursor-pointer hover:from-transparent hover:to-transparent border border-transparent hover:border-violet-600 hover:text-gray-200"
         >
           {currState === "Sign up" ? "Create Account" : "Login Now"}
         </button>
