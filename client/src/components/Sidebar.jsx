@@ -35,14 +35,15 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`min-h-0 bg-[#8185b2]/10 h-full rounded-r-xl text-white flex flex-col ${
+      className={`min-h-0 bg-[#8185b2]/5 h-full rounded-r-xl text-white flex flex-col ${
         selectedUser ? "max-md:hidden" : ""
       }`}
     >
       {/* Top Section - Fixed */}
       <div className="p-5 pb-5 flex-shrink-0">
         <div className="flex justify-between items-center">
-          <img src={assets.logo} alt="logo" className="max-w-40" />
+          {/* <img src={assets.logo} alt="logo" className="max-w-40" /> */}
+          <h1  className="max-w-40" >Flash Chat</h1>
           <div className="relative py-2 group">
             <img
               src={assets.menu_icon}
@@ -87,7 +88,7 @@ const Sidebar = () => {
                 setUnseenMessages(prev => ({ ...prev, [user._id]: 0 }));
               }}
               className={`relative flex items-center gap-2 p-2 pl-4 rounded cursor-pointer max-sm:text-sm ${
-                selectedUser?._id === user?._id ? "bg-[#282142]/50" : ""
+                selectedUser?._id === user?._id ? "bg-violet-500/30" : ""
               }`}
             >
               <img

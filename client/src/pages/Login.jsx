@@ -29,21 +29,22 @@ const Login = () => {
       bio,
     });
     
-    // No need to manually navigate - AuthContext sets authUser
-    // and React Router will automatically redirect via App.js routes
+ 
   };
 
   return (
     <div
       className="min-h-screen bg-cover bg-center flex items-center
-            justify-center gap-8 sm:justify-evenly max-sm:flex-col backdrop-blur-2xl"
+            justify-center gap-8 sm:justify-evenly max-sm:flex-col "
     >
       {/* left */}
-      <img src={assets.logo_big} alt="" className="w-[min(30vw,250px)]" />
+      {/* <img src={assets.logo_big} alt="" className="w-[min(30vw,250px)]" /> */}
+
+      <h1 className="w-[min(30vw,250px)] text-7xl text-white" >Flash Chat</h1>
       {/* right */}
       <form
         onSubmit={onSubmitHandler}
-        className="border-2 bg-white/8 text-white border-gray-500 p-6 flex
+        className="border bg-white/4 text-white border-gray-700 p-6 flex
             flex-col gap-6 rounded-lg shadow-lg"
       >
         <h2 className="font-medium text-2x1 flex justify-between items-center">
@@ -104,8 +105,8 @@ const Login = () => {
         )}
         <button
           type="submit"
-          className="py-3 bg-gradient-to-r from-purple-400
-                to-violet-600 text-white rounded-md cursor-pointer"
+          className="py-2 bg-gradient-to-b from-purple-400
+                to-violet-600 text-white rounded-md cursor-pointer hover:from-violet-400 hover:to-violet-600 hover:text-gray-200"
         >
           {currState === "Sign up" ? "Create Account" : "Login Now"}
         </button>
