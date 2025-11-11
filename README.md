@@ -2,7 +2,7 @@
 
 A real-time chat application built with **React**, **TailwindCSS**, **Node.js**, **Express**, **MongoDB**, and **Socket.io**.
 
-Live Backend: [my-flash-chat.vercel.app]((https://my-flash-chat.vercel.app/))
+**Live Demo:** [https://my-flash-chat.vercel.app](https://my-flash-chat.vercel.app)
 
 ---
 
